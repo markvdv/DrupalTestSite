@@ -223,26 +223,7 @@ Main Menu Links
 .main-menu-inner ul.menu li a:hover { 
     color: #000; 
 } 
-/*
-.main-menu-inner #main-menu li { 
-    display: inline; 
-    list-style: none; 
-    border-right: 1px solid #9CD88C; 
-    padding-right: 10px; 
-    padding-left: 10px; 
-    padding-bottom: 3px; 
-}
-.main-menu-inner #main-menu li a { 
-    color: #ffffff; 
-    text-decoration: none; 
-} 
- 
-.main-menu-inner #main-menu li a:hover { 
- color: #000; 
-} 
 
-
-*/
 
 
 
@@ -407,10 +388,13 @@ ol.search-results .search-info {}
        padding:0.5em;
 }
 
-#edit-comment-body-und-0-format-help{
+fieldset#edit-comment-body-und-0-format.filter-wrapper.form-wrapper{
+    float:left;
     width:100%;
+    overflow:hidden;
+    border:none;
+    margin-left:-20px;
 }
-
 
 //temproray hiding 
 .pane-title{
