@@ -19,10 +19,10 @@ settings[font_family] = 'ff-sss'
 settings[font_size] = 'fs-12'
 
 
-regions[page_bottom]
-regions[page_top]
-regions[help]
-regions[content]
+regions[page_bottom]=Page Bottom
+regions[page_top]=Page Top
+regions[help]=Help
+regions[content]=Content
 regions[alerts] = Alerts 
 regions[featured] = Featured Articles 
 regions[socialnetworks] = Social Networks 
