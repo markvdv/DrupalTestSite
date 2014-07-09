@@ -2,6 +2,19 @@
 # Apache/PHP/Drupal settings:
 #
 
+##### Midwestern Mac-recommended additions #####
+
+# Use mod_deflate to gzip components
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/css application/x-javascript application/javascript text/plain text/html text/xml application/xml
+</IfModule>
+
+# Disable ETags (can help if you're using multiple servers, or use cloud hosting)
+# see: http_://www.askapache.com/htaccess/apache-speed-etags.html (link is external) for more info
+FileETag None
+
+################################################
+
 # Protect files and directories from prying eyes.
 <FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
   Order allow,deny

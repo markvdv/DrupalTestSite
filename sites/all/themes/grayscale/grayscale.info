@@ -1,0 +1,33 @@
+name = Grayscale 
+core = 7.x 
+engine = phptemplate 
+
+stylesheets[all][]=css/style.css
+;// add a style sheet that deals with colors for all mediums 
+;stylesheets[all][] = css/colors.css 
+;// add a style sheet just for printing 
+;stylesheets[print][] = css/print.css 
+;// add a style sheet just for projecting 
+;stylesheets[projector][] = css/showtime.css 
+;// add a style sheet for screen 
+;stylesheets[screen][] = css/style.css 
+;// add a style sheet for screen and projector 
+;stylesheets[screen, projector] = css/showit.css 
+
+
+settings[font_family] = 'ff-sss' 
+settings[font_size] = 'fs-12'
+
+
+regions[page_bottom]
+regions[page_top]
+regions[help]
+regions[content]
+regions[alerts] = Alerts 
+regions[featured] = Featured Articles 
+regions[socialnetworks] = Social Networks 
+
+
+
+;//geen document ready functie in scripts die hier worden geincluded 
+scripts[]=js/jcarousel.js
