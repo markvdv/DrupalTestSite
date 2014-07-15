@@ -1,0 +1,5 @@
+name = form_example_dynamic
+description = An example of a dynamic form
+package= Pro Drupal Development
+core= 7.x
+files[]=form_example_dynamic.module
